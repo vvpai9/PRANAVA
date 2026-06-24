@@ -38,6 +38,8 @@ within the specified area at 25 m altitude
 with 5 passes and 5 waypoints per pass.
 ```
 
+<img width="1910" height="1023" alt="Screenshot_20260526_195555" src="https://github.com/user-attachments/assets/14934ae7-6c21-4e44-accd-304c50754f3b" />
+
 ### Spiral Survey
 
 Example:
@@ -47,6 +49,8 @@ Generate a spiral out survey mission
 within the specified area
 with 3 loops at 25 m altitude.
 ```
+
+<img width="1920" height="1080" alt="Screenshot_20260526_204458" src="https://github.com/user-attachments/assets/59d5e535-c01a-465f-8bd7-796f15c69c98" />
 
 ### Waypoint Mission
 
@@ -109,11 +113,7 @@ pip install --upgrade pip
 Install project dependencies:
 
 ```bash
-pip install \
-PyQt5 \
-requests \
-pydantic \
-pymavlink
+pip install PyQt5 requests pydantic pymavlink
 ```
 
 ---
@@ -199,11 +199,7 @@ Configure and build SITL:
 Start ArduCopter SITL:
 
 ```bash
-sim_vehicle.py -v ArduCopter \
---console \
---map \
---out=127.0.0.1:14550 \
---out=127.0.0.1:14551
+sim_vehicle.py -v ArduCopter --console --map --out=127.0.0.1:14550 --out=127.0.0.1:14551
 ```
 
 Port assignments:
